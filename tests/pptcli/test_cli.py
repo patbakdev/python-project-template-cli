@@ -38,12 +38,13 @@ Options:
   --help               Show this message and exit.
 
 Commands:
-  G1C1    Command Number One (Group One)
-  G1C2    Command Number Two (Group One)
-  G2C1    Command Number One (Group Two)
-  G2C2    Command Number Two (Group Two)
-  group1  Group One Command Group
-  group2  Group Two Command Group
+  G1C1     Command Number One (Group One)
+  G1C2     Command Number Two (Group One)
+  G2C1     Command Number One (Group Two)
+  G2C2     Command Number Two (Group Two)
+  group1   Group One Command Group
+  group2   Group Two Command Group
+  preview  Build Preview Command
 """
 
     assert result.exit_code == 0
@@ -64,12 +65,13 @@ Options:
   --help               Show this message and exit.
 
 Commands:
-  G1C1    Command Number One (Group One)
-  G1C2    Command Number Two (Group One)
-  G2C1    Command Number One (Group Two)
-  G2C2    Command Number Two (Group Two)
-  group1  Group One Command Group
-  group2  Group Two Command Group
+  G1C1     Command Number One (Group One)
+  G1C2     Command Number Two (Group One)
+  G2C1     Command Number One (Group Two)
+  G2C2     Command Number Two (Group Two)
+  group1   Group One Command Group
+  group2   Group Two Command Group
+  preview  Build Preview Command
 """
 
     assert result.exit_code == 0

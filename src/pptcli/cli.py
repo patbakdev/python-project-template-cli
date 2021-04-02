@@ -18,12 +18,13 @@
 
 """Project Template for Python Command Line Tools: Command Line Interface"""
 
-import os
 import logging
+import os
 
 import click
 import click_log
 
+import pptcli.doit.commands
 import pptcli.group1.commands
 import pptcli.group2.commands
 
@@ -46,6 +47,7 @@ main.add_command(pptcli.group1.commands.command1)
 main.add_command(pptcli.group1.commands.command2)
 main.add_command(pptcli.group2.commands.command1)
 main.add_command(pptcli.group2.commands.command2)
+main.add_command(pptcli.doit.commands.preview)
 
 if __name__ == "__main__":
     main()
