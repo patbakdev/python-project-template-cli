@@ -1,1 +1,1 @@
-bandit -r .
+bandit -r src

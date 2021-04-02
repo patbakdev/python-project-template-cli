@@ -36,5 +36,6 @@ setup(
     #     'pylint==2.7.4', # GPLv2
     #     'mypy==0.812', # TODO
     #     'bandit==1.7.0', # TODO
+    #     'pytest==6.2.2', # TODO
     # ],
 )
