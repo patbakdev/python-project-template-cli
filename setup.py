@@ -21,22 +21,46 @@ from setuptools import setup, find_packages
 setup(
     name="pptcli",
     version="0.1.0",
-    packages=find_packages(where="src"),
-    package_dir={"": "src"},
-    entry_points={"console_scripts": ["pptcli = pptcli.__main__:main"]},
-    install_requires=[
-        "click==7.1.2",  # TODO
-        "click-log==0.3.2",  # TODO
-        "colorama==0.4.4",  # BSD License (3 clause)
+    author='Patrick Baker',
+    author_email='patrick@patrickbaker.dev',
+    maintainer='Patrick Baker',
+    maintainer_email='patrick@patrickbaker.dev',
+    url='',
+    summary='',
+    description='',
+    long_description=open('README.md').read(),
+    classifiers=[
+        'Environment :: Console',
+        'License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)',
+
     ],
-    # devtest_requires=[
-    #     'black==20.8b1', # TODO
-    #     'isort==5.8.0', # TODO
-    #     'flake8==2.3.1', # TODO
-    #     'pylint==2.7.4', # GPLv2
-    #     'mypy==0.812', # TODO
-    #     'bandit==1.7.0', # TODO
-    #     'pytest==6.2.2', # MIT
-    #     'SNAPSHOT
-    # ],
+    keywords=[],
+    license='AGPLv3+',
+    license_files=('LICENSE',),
+    package_dir={'': 'src'},
+    packages=find_packages(where='src'),
+    py_modules=['booker'],
+    entry_points={"console_scripts": ["pptcli = pptcli.cli:main"]},
+    install_requires=[
+        "click-log==0.3.2",  # TODO
+        "click==7.1.2",  # TODO
+        'colorama==0.4.4', # BSD
+    ],
+    setup_require=[
+        'bandit==1.7.0' # Apache 2.0
+        'black==20.8b1', # MIT
+        'flake8==3.9.0', # MIT
+        'isort==5.8.0', # MIT
+        'mypy==0.812', # MIT
+        'pylint==2.7.4', # GPLv2+
+    ],
+    tests_require=[
+        'pytest==6.2.2', # MIT
+        'pytest-snapshot==0.5.0', # MIT
+        # 'pytest-cov',
+        # 'pytest-depends',
+        # 'pytest-env',
+        # 'pytest-profiling',
+        # 'vulture==2.3',
+    ],
 )
